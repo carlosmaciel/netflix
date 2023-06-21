@@ -1,0 +1,17 @@
+<app-nav-bar [opened]="menuOpened" (menuToggle) = "setMenuState($event)"></app-nav-bar>
+
+<div class="content-fluid">  
+    <app-full-banner></app-full-banner>
+
+  <!--  <a href="#" (click)="obterTodos()" class="btn btn-primary text-uppercase font-weight-bold">Obter Titulos</a>    -->
+
+    <app-list-titles *ngFor="let secao of listSecoes" name="{{ secao.nome }}" [listTitulos]="secao.titulos"></app-list-titles>
+<!--
+    <app-list-titles name="Adicionado Recentemente" [listTitulos]="listTitulos"></app-list-titles>
+    <app-list-titles name="Em alta" [listTitulos]="listTitulos"></app-list-titles>
+    <app-list-titles name="Continuar assistindo" [listTitulos]="listTitulos"></app-list-titles> -->
+</div>
+
+<app-footer></app-footer>
+
+<div class="backdrop" *ngIf="menuOpened" (click)="toggleBackdrop()"></div>

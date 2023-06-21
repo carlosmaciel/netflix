@@ -1,0 +1,48 @@
+<nav class="navbar navbar-dark bg-dark fixed-top" [ngClass]="{'sidebar-open' : opened}">
+
+    <a class="navbar-toggle" href="#" (click)="toggle()">
+        <img src="/assets/images/hamburger.gif" alt="Menu">
+    </a>
+    
+    <div class="navbar-brand flex-grow-1">
+    <img src="/assets/images/logo.png" class="my-1 mx-2" alt="Netflix">
+    </div>  
+  
+    <ul class="nav text-white d-none d-lg-flex">
+        <li class="nav-item d-xl-none">
+            <a class="nav-link active text-reset" href="#">Navegar</a>
+        </li>
+        <li class="nav-item d-xl-none">
+            <a class="nav-link text-reset" href="#">Infantil</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link active text-reset" href="#">Inicío</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Séries</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Filmes</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Adicionados recentemente</a>
+        </li>
+        <li class="nav-item d-none d-xl-flex">
+            <a class="nav-link text-reset" href="#">Minha lista</a>
+        </li>
+    </ul>
+  
+  
+    <ul class="list-unstyled font-weight-bold sidebar">        
+        <li class="divider"></li>
+        <li><a href="#" class="text-reset">Inicio</a></li>
+        <li><a href="#" class="text-reset">Minha lista</a></li>
+        <li><a href="#" class="text-reset">Séries de ação e aventura</a></li>
+        <li><a href="#" class="text-reset">Ação e aventura</a></li>
+        <li><a href="#" class="text-reset">Séries teen</a></li>
+        <li><a href="#" class="text-reset">Filmes africanos</a></li>
+        <li><a href="#" class="text-reset">Séries da América Latina</a></li>
+        <li><a href="#" class="text-reset">Filmes de Anime</a></li>
+    </ul>
+  
+  </nav>

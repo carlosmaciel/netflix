@@ -1,0 +1,1 @@
+Application programmed on Java 8, Angular 16 and Spring
